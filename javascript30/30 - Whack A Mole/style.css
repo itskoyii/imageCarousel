@@ -12,6 +12,7 @@ html {
     padding: 0;
     margin: 0;
     font-family: 'Amatic SC', cursive;
+    cursor: url('hammer.png'), auto;
   }
   
   h1 {
@@ -21,6 +22,26 @@ html {
     margin-bottom: 0;
   }
   
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .startBtn {
+    padding:16px 36px;
+    margin-top: 16px;
+    background-color: white;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  .startBtn:hover {
+    background-position: 100% 0;
+    background-color: black;
+    color: white;
+  }
+
   .score {
     background: rgba(255,255,255,0.2);
     padding: 0 3rem;
@@ -66,4 +87,27 @@ html {
   
   .hole.up .mole {
     top: 0;
+  }
+
+  .timer {
+    display: flex;
+    min-height: 100px;
+    flex-direction: column;
+  }
+
+  .display {
+    flex:1;
+    display:flex;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .display__time-left {
+    font-weight: 100;
+    font-size: 8rem;
+    margin: 0;
+    color: black;
   }
